@@ -1,6 +1,6 @@
-# IV1350.Seminar3
+# IV1350.Seminar4
 
-This is my solution for the third seminar for the course Object-Oriented Design (IV1350), at KTH The Royal Institute of Technology.
+This is my solution for the fourth seminar for the course Object-Oriented Design (IV1350), at KTH The Royal Institute of Technology.
 
 ## The Design
 
@@ -42,7 +42,3 @@ With the entered customer identification we will get the discount from our datab
 With the entered paid amount we will make a payment object, which consists of the total and the paid amount. With this payment we will add it to the cash register to update its balance. We will then send the sale information to the external systems. We will then make a receipt and send it to the printer. We will then return a string with the change.
 
 ![The "pay" operation](https://github.com/sebastian-porling/IV1350.Seminar3/blob/master/img/pay_FINAL.png)
-
-### Changes
-
-There have been some changes that can be read [here.](https://github.com/sebastian-porling/IV1350.Seminar3/blob/master/CHANGES.md)
