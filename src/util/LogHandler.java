@@ -31,10 +31,6 @@ public class LogHandler {
         builder.append(getDateOfToday());
         builder.append(", Exception was thrown: ");
         builder.append(exc.getMessage());
-        if(exc.getCause() != null){
-            builder.append(" " + exc.getCause().getMessage());
-        }
-
         builder.append(NEW_LINE);
         System.out.println(builder.toString());
         exc.printStackTrace(System.out);
