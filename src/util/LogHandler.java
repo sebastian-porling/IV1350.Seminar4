@@ -34,10 +34,11 @@ public class LogHandler {
         if(exc.getCause() != null){
             builder.append(" " + exc.getCause().getMessage());
         }
-        builder.append(NEW_LINE);
-        builder.append("******************************");
+
         builder.append(NEW_LINE);
         System.out.println(builder.toString());
+        exc.printStackTrace(System.out);
+        System.out.println("******************************");
     }
 
     private String getDateOfToday(){
