@@ -10,7 +10,6 @@ public abstract class LogHandler {
 
     /**
      * Prints out a log, that shows the exception that has been thrown.
-     * Does also print out the date when the exception was thrown.
      * @param exc the exception will be printed out.
      */
     public abstract void showLogException(Exception exc);
