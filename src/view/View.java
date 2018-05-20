@@ -4,6 +4,7 @@ import controller.Controller;
 import controller.OperationFailedException;
 import integration.InvalidItemIdentifierException;
 import util.Amount;
+import util.ConsoleLogHandler;
 import util.LogHandler;
 
 /**
@@ -13,7 +14,7 @@ import util.LogHandler;
 public class View {
     private Controller controller;
     private ErrorMessageHandler errorMessageHandler = ErrorMessageHandler.getErrorMessageHandler();
-    private LogHandler logHandler = LogHandler.getLogger();
+    private LogHandler logHandler = ConsoleLogHandler.getLogHandler();
 
     /**
      *  Creates a new instance, represented as a view.

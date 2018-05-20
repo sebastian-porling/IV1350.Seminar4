@@ -1,0 +1,23 @@
+************ LOG *************
+2018-05-19, Exception was thrown: Given item identifer: Tomt, doesn't exist.
+
+integration.InvalidItemIdentifierException: Given item identifer: Tomt, doesn't exist.
+	at integration.ItemCatalog.getItem(ItemCatalog.java:42)
+	at controller.Controller.registerItem(Controller.java:66)
+	at view.View.registerItem(View.java:66)
+	at view.View.sampleExecution(View.java:39)
+	at startup.Main.main(Main.java:26)
+******************************
+************ LOG *************
+2018-05-19, Exception was thrown: Could not get the item.
+
+controller.OperationFailedException: Could not get the item.
+	at controller.Controller.registerItem(Controller.java:70)
+	at view.View.registerItem(View.java:66)
+	at view.View.sampleExecution(View.java:40)
+	at startup.Main.main(Main.java:26)
+Caused by: integration.ItemCatalogException: Gets the wrong item from database
+	at integration.ItemCatalog.getItem(ItemCatalog.java:49)
+	at controller.Controller.registerItem(Controller.java:66)
+	... 3 more
+******************************
